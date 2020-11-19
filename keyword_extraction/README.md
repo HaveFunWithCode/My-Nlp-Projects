@@ -1,12 +1,8 @@
 **Twitter keyword extraction**
 ---
-As an NLP Specialist, I was working on keyword extraction by rule-based and machine learning methods on informal Persian tweets for a while.
-after experimental results on different rule-based methods, I found that using just rule-based methods which used POS-Tagging as a central part in identifying noun phrases does not work well on an informal text like tweets as formal texts. I found the reason is some part of the speech is removed in informal text.
-so the main problem with rule-based methods in informal tweets keyword extraction in my opinion is the lack of ability of this method in identifying the right part of speech. so I decide to use machine learning methods to learn the right position of keywords in tweets.
-this method is as follow :
+As an NLP Specialist, I was working on keyword extraction by rule-based and machine learning methods on informal Persian tweets for a while. After experimental results on different rule-based methods, I found that using just rule-based methods used POS-Tagging as a central part in identifying noun phrases does not work well on an informal text like tweets as formal texts. I found the reason is some parts of the speech are removed in informal text. So the main problem with rule-based methods in informal tweets keyword extraction is the lack of ability of these methods in identifying the right part of speech. so I decide to use machine learning methods to learn the right position of keywords in tweets. This method is as follow :
 
-1) A database was created as training data from tweets with keywords. For this purpose, 500 tweets were tagged by 3 people. Each word was assigned one of three tags (part key-full key-none) depending on whether it was part of a keyword the phrase, or whether it was a keyword or whether it was not a keyword. based on my intuition,12 features including some rule-based features (that I know have low confidence but not zero!) and some innovative features based on my experience after exploring many tweets were extracted for each of these words.
-   
+1) A database was created as training data from tweets with keywords. For this purpose, 400 tweets were tagged by 3 people. Each word was assigned one of three tags (part key-full key-none) depending on whether it was part of a keyword the phrase, or whether it was a keyword or whether it was not a keyword. based on my intuition, 12 features including some rule-based features (that I know have low confidence but not zero!) and some innovative features were extracted for each of these words.
 2) build a classical model on the provided dataset
 3) predict the keywords using the model
 
@@ -64,3 +60,6 @@ option2: pass the sentence as text file :
 
     python predict.py rf  -f testinput.txt
 
+**TODO**:
+
+  add model evaluation
