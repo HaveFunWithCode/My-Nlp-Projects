@@ -1,0 +1,16 @@
+..\PersianStemmer\persian_stemmer.py
+..\PersianStemmer\stemming_rule.py
+..\PersianStemmer\utils.py
+..\PersianStemmer\verb_stem.py
+..\PersianStemmer\__init__.py
+..\PersianStemmer\data\Dictionary.ar
+..\PersianStemmer\data\Dictionary.fa
+..\PersianStemmer\data\Mokassar.fa
+..\PersianStemmer\data\Patterns.fa
+..\PersianStemmer\data\PECL_Patterns.fa
+..\PersianStemmer\data\VerbList.fa
+dependency_links.txt
+PKG-INFO
+requires.txt
+SOURCES.txt
+top_level.txt

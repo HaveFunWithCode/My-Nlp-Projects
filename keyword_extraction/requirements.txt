@@ -1,0 +1,15 @@
+click==7.1.2
+executing==0.4.4
+hazm==0.7.0
+itsdangerous==1.1.0
+libwapiti==0.2.1
+MarkupSafe==1.1.1
+nltk==3.3
+numpy==1.18.5
+pandas
+patricia-trie==10
+PersianStemmer==1.0.0
+pytz==2020.1
+six==1.15.0
+Werkzeug==1.0.1
+xlrd==1.2.0
