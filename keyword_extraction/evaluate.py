@@ -92,7 +92,7 @@ def main():
         informaldf = df[df['isformal'] == False].copy()
         informaldf = informaldf[informaldf['keys'].apply(lambda x: len(x) > 2)]
 
-        evaluate(informaldf.iloc[1:100, 0:2], method=method, loadfeature=False,test_part=0.3)
+        evaluate(informaldf.iloc[:, 0:2], method=method, loadfeature=False,test_part=0.3)
 
 
 
