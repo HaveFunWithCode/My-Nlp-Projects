@@ -61,6 +61,10 @@ option2: pass the sentence as text file :
 
     python predict.py rf  -f testinput.txt
 
-**TODO**:
+**evaluate**
 
-  add model evaluation
+To evaluate run:
+
+    python evaluate.py tweets.csv rf 0.4
+
+0.4 is test set part of the dataset 
