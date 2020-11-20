@@ -1,0 +1,10 @@
+{"unroll_steps": 20,
+  "n_tokens_vocab": 221613,
+  "char_cnn": {"embedding": {"dim": 16},
+    "n_highway": 2,
+    "filters": [[1, 32], [2, 32], [3, 64], [4, 128], [5, 256], [6, 512], [7, 1024]],
+    "activation": "relu",
+    "n_characters": 262,
+    "max_characters_per_token": 50},
+  "lstm": {"cell_clip": 3, "n_layers": 2, "use_skip_connections": true, "dim": 4096,
+    "projection_dim": 512, "proj_clip": 3}, "bidirectional": true, "dropout": 0.1, "n_negative_samples_batch": 8192, "batch_size": 32, "all_clip_norm_val": 10.0, "n_epochs": 10, "n_train_tokens": 221613}
