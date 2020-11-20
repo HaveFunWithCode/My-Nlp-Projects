@@ -15,7 +15,7 @@ def evaluate_model(features, target, method,test_part):
     """ param method: nb |svm|nn """
     X_train, X_test, Y_train, Y_test = train_test_split(features,
                                                                         target, 
-                                                                        test_size=text_part,
+                                                                        test_size=test_part,
                                                                         random_state=100)
     if method == 'nb':
         classifier = GNB()
